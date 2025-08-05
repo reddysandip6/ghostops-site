@@ -2,21 +2,33 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>GhostOps - AI Automation Agency</title>
   <style>
     body {
+      margin: 0;
       font-family: Arial, sans-serif;
-      background-color: #0f0f0f;
-      color: #f1f1f1;
-      padding: 2em;
+      background-color: #0e0e0e;
+      color: #f5f5f5;
     }
-    h1 { color: #00ffe0; }
+    header {
+      background-color: #1a1a1a;
+      padding: 2em;
+      text-align: center;
+    }
+    h1 {
+      color: #00ffe0;
+      margin-bottom: 0.2em;
+    }
     .section {
+      padding: 2em;
+      margin: 1em;
       background-color: #1c1c1c;
-      padding: 1.5em;
       border-radius: 10px;
-      margin-bottom: 2em;
+    }
+    ul {
+      list-style-type: "🚀 ";
+      padding-left: 1.2em;
     }
     a {
       color: #00bfff;
@@ -25,26 +37,83 @@
     a:hover {
       text-decoration: underline;
     }
+    .form-group {
+      margin-bottom: 1em;
+    }
+    input, textarea, button {
+      width: 100%;
+      padding: 0.8em;
+      margin-top: 0.4em;
+      border-radius: 5px;
+      border: none;
+    }
+    button {
+      background-color: #00bfff;
+      color: #fff;
+      cursor: pointer;
+    }
+    button:hover {
+      background-color: #009acd;
+    }
+    iframe.chatbot {
+      width: 100%;
+      height: 400px;
+      border: none;
+      margin-top: 1em;
+      border-radius: 10px;
+    }
+    footer {
+      text-align: center;
+      padding: 2em;
+      color: #777;
+    }
   </style>
 </head>
 <body>
+
+<header>
   <h1>👻 GhostOps</h1>
-  <p>AI automation for your business: onboarding bots, dashboards, and full workflows.</p>
+  <p>Automate your business with AI. Bots, dashboards, forms — all done for you.</p>
+</header>
 
-  <div class="section">
-    <h2>💼 Services</h2>
-    <ul>
-      <li>AI Chatbot Setup</li>
-      <li>Workflow Automation</li>
-      <li>Lead & CRM Dashboard</li>
-      <li>Website + Funnel Creation</li>
-    </ul>
-  </div>
+<div class="section">
+  <h2>💼 Services</h2>
+  <ul>
+    <li>AI Client Chatbot Setup</li>
+    <li>Workflow Automation & Onboarding</li>
+    <li>Lead Collection + CRM Dashboard</li>
+    <li>Landing Page & Website Funnels</li>
+  </ul>
+</div>
 
-  <div class="section">
-    <h2>🚀 Start Now</h2>
-    <p><a href="#">Start a Project (Demo)</a></p>
-    <p><a href="#">CRM Dashboard (Demo)</a></p>
-  </div>
+<div class="section">
+  <h2>📝 Start Your Project</h2>
+  <form>
+    <div class="form-group">
+      <label for="name">Your Name:</label>
+      <input type="text" id="name" name="name" placeholder="John Doe" required />
+    </div>
+    <div class="form-group">
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" placeholder="you@example.com" required />
+    </div>
+    <div class="form-group">
+      <label for="project">Project Details:</label>
+      <textarea id="project" name="project" rows="4" placeholder="Tell us about your business or what you want to automate..." required></textarea>
+    </div>
+    <button type="submit">Submit</button>
+  </form>
+</div>
+
+<div class="section">
+  <h2>🤖 Try Our AI Bot (Demo)</h2>
+  <iframe class="chatbot" src="https://example.com/demo-chatbot"></iframe>
+  <p><small>* Chatbot link is placeholder — real AI integration coming soon.</small></p>
+</div>
+
+<footer>
+  &copy; 2025 GhostOps. All rights reserved.
+</footer>
+
 </body>
 </html>
